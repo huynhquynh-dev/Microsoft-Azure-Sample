@@ -23,4 +23,5 @@ ENTRYPOINT ["dotnet", "cart.dll"]
 # Mở Đăng ký trong Azure Container trên portal
 # Đăng ký Azure Container
 # Push docker lên azure
-# Run lệnh: az aks create --resousrce-group readit-app-rg --name cart-aks --node-count 1 --generate-ssh-keys --attach-acr readitacrlionhuynh --node-vm-size Standard_DS1_v2
+# Run lệnh: az aks create --resource-group readit-app-rg --name cart-aks --node-count 1 --generate-ssh-keys --attach-acr readitacrlionhuynh --node-vm-size Standard_B2ms
+# az aks install-cli
