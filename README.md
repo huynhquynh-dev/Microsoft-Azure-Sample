@@ -29,3 +29,14 @@
 
         Change name image in file deployment.yaml
         kubectl apply -f deployment.yaml
+
+## Order
+    dotnet restore
+    
+    Create function app on azure:
+        az storage account create --name readitfunstoragelion --location southeastasia --resource-group readit-app-rg --sku Standard_LRS
+    
+        az functionapp create --name readitfunclion --storage-account readitfunstoragelion --consumption-plan-location southeastasia --resource-group readit-app-rg --functions-version 3
+
+    deploy function from local to azure function
+    upload settings
